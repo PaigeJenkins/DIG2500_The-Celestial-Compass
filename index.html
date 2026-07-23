@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Celestial Compass</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Images/Logo.svg" alt="Logo to be designed">
+            </div>
+
+            <nav>
+                <a href="#places">PLACES</a>
+                <a href="#itinerary">ITINERARY</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="Images/Space Background.png" alt="Space Background">
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>The Celestial Compass</h1>
+                    <p>Hello! Let's plan your trip through the Universe.</p>
+                </div>
+
+                <div class="hero-details">
+                    <h2>Explore Space</h2>
+                    <ul>
+                        <li>Discover destinations</li>
+                        <li>Pin your favourite places</li>
+                        <li>Create a travel itinerary</li>
+                        <li>Explore the Universe</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="places">
+            <h2>Top places</h2>
+
+            <div class="card-row">
+                <article class="place-card">
+                    <input type="checkbox" id="dublin" value="Destination 1" onclick="updateItinerary()">
+
+                    <label for="dublin" class="pin">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.91 80.35">
+                            <path d="M28.46,0C12.77,0,0,12.77,0,28.46s26.27,49.09,27.39,50.52l1.07,1.37,1.07-1.37c1.12-1.43,27.39-35.26,27.39-50.52S44.15,0,28.46,0h0ZM28.46,16.26c6.72,0,12.2,5.47,12.2,12.2s-5.47,12.2-12.2,12.2-12.2-5.47-12.2-12.2,5.47-12.2,12.2-12.2Z"/>
+                        </svg>
+                    </label>
+
+                    <img src="Images/Dublin.jpg" alt="Destination 1">
+                    <h3>Destination</h3>
+                </article>
+
+                <article class="place-card">
+                   <input type="checkbox" id="newgrange" value="Destination 2" onclick="updateItinerary()">
+
+                    <label for="newgrange" class="pin">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.91 80.35">
+                            <path d="M28.46,0C12.77,0,0,12.77,0,28.46s26.27,49.09,27.39,50.52l1.07,1.37,1.07-1.37c1.12-1.43,27.39-35.26,27.39-50.52S44.15,0,28.46,0h0ZM28.46,16.26c6.72,0,12.2,5.47,12.2,12.2s-5.47,12.2-12.2,12.2-12.2-5.47-12.2-12.2,5.47-12.2,12.2-12.2Z"/>
+                        </svg>
+                    </label>
+
+                    <img src="Images/Newgrange.jpg" alt="Destination 2">
+                    <h3>Destination</h3>
+                </article>
+
+                <article class="place-card">
+                    <input type="checkbox" id="cliffs" value="Destination 3" onclick="updateItinerary()">
+
+                    <label for="cliffs" class="pin">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.91 80.35">
+                            <path d="M28.46,0C12.77,0,0,12.77,0,28.46s26.27,49.09,27.39,50.52l1.07,1.37,1.07-1.37c1.12-1.43,27.39-35.26,27.39-50.52S44.15,0,28.46,0h0ZM28.46,16.26c6.72,0,12.2,5.47,12.2,12.2s-5.47,12.2-12.2,12.2-12.2-5.47-12.2-12.2,5.47-12.2,12.2-12.2Z"/>
+                        </svg>
+                    </label>
+
+                    <img src="Images/CliffsofMoher.jpg" alt="Destination 3">
+                    <h3>Destination</h3>
+                </article>
+
+                <article class="place-card">
+                    <input type="checkbox" id="ring" value="Destination 4" onclick="updateItinerary()">
+
+                    <label for="ring" class="pin">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.91 80.35">
+                            <path d="M28.46,0C12.77,0,0,12.77,0,28.46s26.27,49.09,27.39,50.52l1.07,1.37,1.07-1.37c1.12-1.43,27.39-35.26,27.39-50.52S44.15,0,28.46,0h0ZM28.46,16.26c6.72,0,12.2,5.47,12.2,12.2s-5.47,12.2-12.2,12.2-12.2-5.47-12.2-12.2,5.47-12.2,12.2-12.2Z"/>
+                        </svg>
+                    </label>
+
+                    <img src="Images/RingofKerry.jpg" alt="Destination 4">
+                    <h3>Destination</h3>
+                </article>
+
+                <article class="place-card">
+                    <input type="checkbox" id="causeway">
+
+                    <label for="causeway" class="pin">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.91 80.35">
+                            <path d="M28.46,0C12.77,0,0,12.77,0,28.46s26.27,49.09,27.39,50.52l1.07,1.37,1.07-1.37c1.12-1.43,27.39-35.26,27.39-50.52S44.15,0,28.46,0h0ZM28.46,16.26c6.72,0,12.2,5.47,12.2,12.2s-5.47,12.2-12.2,12.2-12.2-5.47-12.2-12.2,5.47-12.2,12.2-12.2Z"/>
+                        </svg>
+                    </label>
+
+                    <img src="Images/GiantsCauseway.jpg" alt="Destination 5">
+                    <h3>Destination</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="itinerary-section" id="itinerary">
+            <div class="itinerary-list">
+                <h2>Your pinned itinerary</h2>
+
+                <ol id="itineraryList"></ol>
+            </div>
+
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="Images/Logo.svg" alt="Logo">
+            </div>
+
+            <h2>Follow us </h2>
+            <p>Logo created by myself</p>
+            <p>Images and pin icon found on Adobe Stock and correctly licensed</p>
+            <p>My dad, with extensive programming experience, helped me with questions</p>
+
+            <div class="footer-line"></div>
+        </div>
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+</html>

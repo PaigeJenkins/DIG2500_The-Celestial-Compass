@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    background: #e2e2e2;
+    color: #0d000c;
+    font-family: Helvetica, sans-serif;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    background-color: #0b0b14;
+}
+
+.nav-container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 24px 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 42px;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 18px;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #00130c;
+    background-color: white;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    filter: brightness(45%);
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 52px;
+}
+
+.hero-text p {
+    font-size: 24px;
+}
+
+.hero-details {
+    width: 330px;
+}
+
+.hero-details h2 {
+    margin: 0 0 18px;
+    font-size: 28px;
+}
+
+.hero-details ul {
+    margin: 0;
+    padding-left: 20px;
+    line-height: 2;
+}
+
+.content-section,
+.itinerary-section {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 45px 60px;
+    box-sizing: border-box;
+}
+
+.content-section h2,
+.itinerary-section h2 {
+    margin: 0 0 30px;
+    font-size: 32px;
+}
+
+.card-row {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px 5px 30px;
+    scroll-behavior: smooth;
+}
+
+.card-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.card-row::-webkit-scrollbar-thumb {
+    background: #929c98;
+    border-radius: 10px;
+}
+
+.card-row::-webkit-scrollbar-track {
+    background: #d1d5d3;
+}
+
+.place-card {
+    position: relative;
+    width: 230px;
+    height: 340px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 14px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    animation: slideIn 0.7s ease forwards;
+    transition: transform 0.2s ease;
+}
+
+.place-card input {
+    display: none;
+}
+
+.place-card img {
+    width: 100%;
+    height: 230px;
+    display: block;
+    object-fit: cover;
+}
+
+.place-card h3 {
+    margin: 0;
+    padding: 22px 18px;
+    font-size: 20px;
+}
+
+.place-card:hover,
+.place-card:focus-within {
+    transform: translateY(-5px);
+}
+
+.pin {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.pin svg {
+    width: 18px;
+    height: 26px;
+}
+
+.pin svg path {
+    fill: transparent;
+    stroke: #003a22;
+    stroke-width: 2;
+    transition: fill 0.2s ease;
+}
+
+.place-card input:checked + .pin svg path {
+    fill: #003a22;
+}
+
+.pin:hover svg {
+    transform: scale(1.1);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(120px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.itinerary-section {
+    min-height: 430px;
+    border-top: 2px solid #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.itinerary-list {
+    flex: 1;
+}
+
+.itinerary-list ol {
+    width: 340px;
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.itinerary-list li {
+    margin-bottom: 14px;
+    padding: 14px 18px;
+    border-radius: 7px;
+    background-color: #dce2df;
+    font-size: 18px;
+}
+
+.map {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.map img {
+    width: 65%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 55px 0;
+    color: white;
+    background-color: #0b0b14;
+}
+
+.footer-container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 18px 60px;
+    box-sizing: border-box;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer p {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.footer-line {
+    width: 100%;
+    height: 2px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+@media (max-width: 750px) {
+    .nav-container {
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 7px 10px;
+        font-size: 10px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero-content {
+        padding: 50px 25px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text p {
+        font-size: 19px;
+    }
+
+    .hero-details {
+        width: 100%;
+    }
+
+    .content-section,
+    .itinerary-section {
+        padding: 35px 25px;
+    }
+
+    .card-row {
+        gap: 20px;
+    }
+
+    .place-card {
+        width: 220px;
+        height: 330px;
+    }
+
+    .place-card img {
+        height: 220px;
+    }
+
+    .itinerary-section {
+        flex-direction: column;
+    }
+
+    .itinerary-list ol {
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .map img {
+        width: 70%;
+    }
+
+    .footer-container {
+        padding: 18px 25px;
+    }
+}
