@@ -18,3 +18,31 @@ function updateItinerary() {
     }
 
 }
+
+function moveLeft() {
+
+    var cards = document.getElementById("cardRow");
+
+    cards.scrollBy({
+        left: -480,
+        behavior: "smooth"
+    });
+
+}
+
+function moveRight() {
+
+    var cards = document.getElementById("cardRow");
+
+    cards.scrollBy({
+        left: 480,
+        behavior: "smooth"
+    });
+
+}
+
+function closeAd() {
+
+    document.getElementById("adPopup").style.display = "none";
+
+}
