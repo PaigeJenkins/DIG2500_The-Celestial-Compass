@@ -53,7 +53,7 @@ One classmate tested the website using Google Chrome on a laptop. They found the
 - NASA – Space information and destination research
 - National Geographic – Space information and destination research
 - W3Schools – JavaScript reference and learning resource
-- My dad provided guidance when I had programming questions.
+- My dad helped when I had programming questions.
 
 ## Future Improvements
 I would like the itinerary to become editable so users can drag and reorder destinations. I would also like to add different modes of transportation and create separate pages for each destination with more detailed information.
