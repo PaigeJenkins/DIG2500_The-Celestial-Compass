@@ -11,7 +11,7 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <img src="Images/Logo.svg" alt="Logo to be designed">
+                <img src="Images/Logo.svg" alt="Logo">
             </div>
 
             <nav>
@@ -20,6 +20,7 @@
             </nav>
         </div>
     </header>
+    
 
     <main>
         <section class="hero">
@@ -32,7 +33,7 @@
                 </div>
 
                 <div class="hero-details">
-                    <h2>Explore Space</h2>
+                    <h2>Let's Explore Space</h2>
                     <ul>
                         <li>Discover destinations</li>
                         <li>Pin your favourite places</li>
@@ -45,72 +46,124 @@
 
         <section class="content-section" id="places">
             <h2>Top places</h2>
+            
 
-            <div class="card-row">
+            <div class="card-container">
+    <button class="arrow left" onclick="moveLeft()">❮</button>
+
+    <div class="card-row" id="cardRow">
                 <article class="place-card">
-                    <input type="checkbox" id="dublin" value="Destination 1" onclick="updateItinerary()">
+                    <input type="checkbox" id="Mars" value="Mars" onclick="updateItinerary()">
 
-                    <label for="dublin" class="pin">
+                    <label for="Mars" class="pin">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.91 80.35">
                             <path d="M28.46,0C12.77,0,0,12.77,0,28.46s26.27,49.09,27.39,50.52l1.07,1.37,1.07-1.37c1.12-1.43,27.39-35.26,27.39-50.52S44.15,0,28.46,0h0ZM28.46,16.26c6.72,0,12.2,5.47,12.2,12.2s-5.47,12.2-12.2,12.2-12.2-5.47-12.2-12.2,5.47-12.2,12.2-12.2Z"/>
                         </svg>
                     </label>
 
-                    <img src="Images/Dublin.jpg" alt="Destination 1">
-                    <h3>Destination</h3>
+                    <img src="Images/Destination__Mars.png" alt="Mars">
+                    <h3>Mars</h3>
+                    <p class="card-text">Explore the red planet and see the largest volcano and canyon in the Solar System. Mars is perfect for travelers looking for breathtaking landscapes and future human history.</p>
                 </article>
 
                 <article class="place-card">
-                   <input type="checkbox" id="newgrange" value="Destination 2" onclick="updateItinerary()">
+                   <input type="checkbox" id="Europa" value="Europa" onclick="updateItinerary()">
 
-                    <label for="newgrange" class="pin">
+                    <label for="Europa" class="pin">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.91 80.35">
                             <path d="M28.46,0C12.77,0,0,12.77,0,28.46s26.27,49.09,27.39,50.52l1.07,1.37,1.07-1.37c1.12-1.43,27.39-35.26,27.39-50.52S44.15,0,28.46,0h0ZM28.46,16.26c6.72,0,12.2,5.47,12.2,12.2s-5.47,12.2-12.2,12.2-12.2-5.47-12.2-12.2,5.47-12.2,12.2-12.2Z"/>
                         </svg>
                     </label>
 
-                    <img src="Images/Newgrange.jpg" alt="Destination 2">
-                    <h3>Destination</h3>
+                    <img src="Images/Destination__Europa.png" alt="Europa">
+                    <h3>Europa</h3>
+                    <p class="card-text">Discover a frozen world covered in ice, with a hidden ocean beneath the surface. Europa is a great destination for those curious about one of the best places to search for life.</p>
                 </article>
 
                 <article class="place-card">
-                    <input type="checkbox" id="cliffs" value="Destination 3" onclick="updateItinerary()">
+                    <input type="checkbox" id="Titan" value="Titan" onclick="updateItinerary()">
 
-                    <label for="cliffs" class="pin">
+                    <label for="Titan" class="pin">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.91 80.35">
                             <path d="M28.46,0C12.77,0,0,12.77,0,28.46s26.27,49.09,27.39,50.52l1.07,1.37,1.07-1.37c1.12-1.43,27.39-35.26,27.39-50.52S44.15,0,28.46,0h0ZM28.46,16.26c6.72,0,12.2,5.47,12.2,12.2s-5.47,12.2-12.2,12.2-12.2-5.47-12.2-12.2,5.47-12.2,12.2-12.2Z"/>
                         </svg>
                     </label>
 
-                    <img src="Images/CliffsofMoher.jpg" alt="Destination 3">
-                    <h3>Destination</h3>
+                    <img src="Images/Destination__Titan.png" alt="Titan">
+                    <h3>Titan</h3>
+                    <p class="card-text">Visit Saturn's largest moon and experience thick golden skies and lakes made of liquid methane. Titan offers a completely different landscape than anywhere else in the Solar System.</p>
                 </article>
 
                 <article class="place-card">
-                    <input type="checkbox" id="ring" value="Destination 4" onclick="updateItinerary()">
+                    <input type="checkbox" id="Io" value="Io" onclick="updateItinerary()">
 
-                    <label for="ring" class="pin">
+                    <label for="Io" class="pin">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.91 80.35">
                             <path d="M28.46,0C12.77,0,0,12.77,0,28.46s26.27,49.09,27.39,50.52l1.07,1.37,1.07-1.37c1.12-1.43,27.39-35.26,27.39-50.52S44.15,0,28.46,0h0ZM28.46,16.26c6.72,0,12.2,5.47,12.2,12.2s-5.47,12.2-12.2,12.2-12.2-5.47-12.2-12.2,5.47-12.2,12.2-12.2Z"/>
                         </svg>
                     </label>
 
-                    <img src="Images/RingofKerry.jpg" alt="Destination 4">
-                    <h3>Destination</h3>
+                    <img src="Images/Destination__Io.png" alt="Io">
+                    <h3>Io</h3>
+                    <p class="card-text">Watch active volcanoes reshape the surface of Jupiter's fiery moon. Io is the perfect stop for anyone looking for dramatic views and nonstop geological activity.</p>
                 </article>
 
                 <article class="place-card">
-                    <input type="checkbox" id="causeway">
+                    <input type="checkbox" id="Ganymede" value="Ganymede" onclick="updateItinerary()"> 
 
-                    <label for="causeway" class="pin">
+                    <label for="Ganymede" class="pin">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.91 80.35">
                             <path d="M28.46,0C12.77,0,0,12.77,0,28.46s26.27,49.09,27.39,50.52l1.07,1.37,1.07-1.37c1.12-1.43,27.39-35.26,27.39-50.52S44.15,0,28.46,0h0ZM28.46,16.26c6.72,0,12.2,5.47,12.2,12.2s-5.47,12.2-12.2,12.2-12.2-5.47-12.2-12.2,5.47-12.2,12.2-12.2Z"/>
                         </svg>
                     </label>
 
-                    <img src="Images/GiantsCauseway.jpg" alt="Destination 5">
-                    <h3>Destination</h3>
+                    <img src="Images/Destination__Ganymede.png" alt="Ganymede">
+                    <h3>Ganymede</h3>
+                    <p class="card-text">Visit the largest moon in the Solar System and explore a world even bigger than Mercury. Ganymede offers icy landscapes, deep craters, and incredible views of Jupiter.</p>
                 </article>
+
+                <article class="place-card">
+                    <input type="checkbox" id="Callisto" value="Callisto" onclick="updateItinerary()">
+
+                    <label for="Callisto" class="pin">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.91 80.35">
+                            <path d="M28.46,0C12.77,0,0,12.77,0,28.46s26.27,49.09,27.39,50.52l1.07,1.37,1.07-1.37c1.12-1.43,27.39-35.26,27.39-50.52S44.15,0,28.46,0h0ZM28.46,16.26c6.72,0,12.2,5.47,12.2,12.2s-5.47,12.2-12.2,12.2-12.2-5.47-12.2-12.2,5.47-12.2,12.2-12.2Z"/>
+                        </svg>
+                    </label>
+
+                    <img src="Images/Destination__Callisto.png" alt="Callisto">
+                    <h3>Callisto</h3>
+                    <p class="card-text">Travel to one of the oldest and most heavily cratered worlds in the Solar System. Callisto is a quieter destination that's perfect for sightseeing and taking in its ancient landscape.</p>
+                </article>
+
+                <article class="place-card">
+                    <input type="checkbox" id="Neptune" value="Neptune" onclick="updateItinerary()">
+
+                    <label for="Neptune" class="pin">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.91 80.35">
+                            <path d="M28.46,0C12.77,0,0,12.77,0,28.46s26.27,49.09,27.39,50.52l1.07,1.37,1.07-1.37c1.12-1.43,27.39-35.26,27.39-50.52S44.15,0,28.46,0h0ZM28.46,16.26c6.72,0,12.2,5.47,12.2,12.2s-5.47,12.2-12.2,12.2-12.2-5.47-12.2-12.2,5.47-12.2,12.2-12.2Z"/>
+                        </svg>
+                    </label>
+
+                    <img src="Images/Destination__Neptune.png" alt="Neptune">
+                    <h3>Neptune</h3>
+                    <p class="card-text">Journey to the edge of the Solar System and admire Neptune's deep blue color and powerful storms. It's a great destination for travelers looking for a truly distant adventure.</p>
+                </article>
+                   </div>
+
+    <button class="arrow right" onclick="moveRight()">❯</button>
+    <section class="learn-more-section">
+    <h2>Learn More</h2>
+
+    <p>
+        Interested in learning more about our destinations? Visit NASA and National Geographic to explore space missions, discoveries, and the science behind each location.
+    </p>
+
+    <a href="https://www.nasa.gov/" target="_blank">NASA</a>
+    <a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
+</section>
+
+</div>
             </div>
         </section>
 
@@ -120,9 +173,21 @@
 
                 <ol id="itineraryList"></ol>
             </div>
+            <section class="final checklist">
+    <h2>Before embarking on your journey, check these off!</h2>
+
+    <ul>
+                        <li>Earth passport, used for any pre-space connections</li>
+                        <li>Inter-galatical passport, most important!</li>
+                        <li>Space boots, ready for all terrain </li>
+                        <li>Back-up oxygen helmet, just in case</li>
+                    </ul>
+
+</section>
 
             
         </section>
+        
     </main>
 
     <footer>
@@ -131,14 +196,22 @@
                 <img src="Images/Logo.svg" alt="Logo">
             </div>
 
-            <h2>Follow us </h2>
+            <h2>Follow us @thecelestialcompass </h2>
             <p>Logo created by myself</p>
             <p>Images and pin icon found on Adobe Stock and correctly licensed</p>
+            <p>National Geographic and NASA used for information about planets and moons</p>
             <p>My dad, with extensive programming experience, helped me with questions</p>
 
             <div class="footer-line"></div>
         </div>
     </footer>
+    <div id="adPopup" class="ad-popup">
+    <div class="ad-box">
+        <button class="close-button" onclick="closeAd()">✕</button>
+        <img src="Images/SpaceAd.png" alt="Advertisement">
+    </div>
+</div>
+
     <script src="JS/script.js"></script>
 </body>
 </html>
